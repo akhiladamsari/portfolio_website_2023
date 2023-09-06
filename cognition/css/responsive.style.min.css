@@ -1,0 +1,1774 @@
+/*==============================================================================
+=            RESPONSIVE   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=================================================================================*/
+@media (max-width: 1440px) {
+h1 {
+  font-size: 20pt;
+}  
+h2 {
+  font-size: 14pt;
+}  
+h3 {
+  font-size: 12pt;
+} 
+h4 {
+  font-size: 10pt;
+} 
+h5 {
+  font-size: 10pt;
+} 
+h6 {
+  font-size: 10pt;
+}
+
+.menu{
+  padding-top: 150px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.main-container{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 95%;
+  width: 98%;
+  /*background-color: darkcyan;*/
+}
+
+.left-most{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.center-column{
+}
+
+.center-top{
+  height: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-top-left{
+  /*background-color: black;*/
+  display: flex;
+  width: 20%;
+  text-align: left;
+}
+
+.section-top-center{
+  /*background-color: darkblue;*/
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  padding: 5px;
+}
+
+.section-top-center a{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /*background-color: grey;*/
+  z-index: 6;
+
+}
+
+.section-top-right{
+  /*background-color: black;*/
+  display: flex;
+  justify-content: right;
+  width: 20%;
+
+}
+
+.section-top-left i,
+.section-top-center i,
+.section-top-right i{
+  margin: 5px;
+  font-size: 20pt;
+}
+
+.bottom-inside{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.right-inside{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-left,
+.section-right{
+  padding: 0px;
+  /*background-color: green;*/
+}
+
+.section-icon {
+  width: 30px; 
+  height: 30px; 
+  margin-right: 10px;
+}
+
+.menu-icon {
+  width: 30px; 
+  height: 30px; 
+  margin-right: 10px;
+}
+
+.textarea-alt{
+  height: 72%;
+  /*background-color: red;*/
+}
+
+.label-button {
+  padding-top: 5px;
+  margin: 0px;
+}
+
+.alert-button {
+  font-size: 10pt;
+}
+
+.priority-button {
+  width: 70%;
+  font-size: 10pt;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.secondary-button {
+  width: 70%;
+  font-size: 10pt;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/*++++++   Menu Bar (max-width: 1500px) +++++++++++++++++++++++++++++++++++++++++++++++++*/
+.menu-bar{
+  margin: 10px;
+  height: 12%;
+  /*background-color: grey;*/
+}
+
+.menu-bar .section-top-left{
+  /*background-color: black;*/
+  height: auto;
+  width: 12%;
+  margin: 5px;
+  padding: 15px;
+}
+
+.menu-bar .section-top-center{
+  /*background-color: darkgray;*/
+  height: auto;
+  width: 65%;
+  margin: 5px;
+  padding: 10px;
+}
+
+.menu-bar .section-top-center a img{
+  width: 80%;
+}
+
+.menu-bar .section-top-right{
+  /*background-color: black;*/
+  height: auto;
+  width: 12%;
+  margin: 5px;
+  padding: 10px;
+
+}
+
+.menu-bar .section-top-left i,
+.menu-bar .section-top-right i{
+  font-size: 22pt;
+  margin: 2px;
+}
+
+/*++++++   Form Page (max-width: 1500px) +++++++++++++++++++++++++++++++++++++++++++++++++*/
+.form-body{
+  margin: 15px;
+  height: auto;
+  /*background-color: green;*/
+}
+
+.form-row-box{
+ 
+}
+.form-inside{
+  height: 100%;
+  padding-top: 15px;
+}
+
+.form-inside h1{
+  margin-top: 8px;
+  font-size: 22pt;
+}
+.form-area{
+  color: white;
+  padding: 5px 30px;
+  width: 100%;
+}
+
+.form-area form{
+  /*background-color: darkcyan;*/
+  width: 100%;
+}
+
+.form-area input{
+  padding-left: 10px;
+  margin-bottom: 1vh;
+}
+
+.form-area label {
+  margin-bottom: 0.5vh;
+  font-size: 12pt;
+}
+
+.form-priority-button {
+  font-size: 10pt;
+}
+
+.form-secondary-button {
+  font-size: 10pt;
+}
+
+/*++++++  View Page (max-width: 1500px) ++++++++++++++++++++++++++++++++++++++++++++*/
+.table-body{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.table-inside{
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+
+.table-inside h1{
+  margin-top: 8px;
+}
+.table-area{
+  margin-bottom: 20px;
+  margin-top: 15px;
+/*  background-color: darkblue;*/
+}
+
+
+.table-area table th {
+  font-size: 12pt;
+  padding: 20px 10px;
+
+}
+
+.table-area table th i{
+  font-size: 8pt;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+
+.table-area table td {;
+  font-size: 10pt;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  padding-left: 10px;
+}
+
+/*   Log In Page (max-width: 1500px) ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.login-containter{
+  padding-top: 10vh;
+  /*background-color: whitesmoke;*/
+}
+
+.logo-section img{
+  width: 60%;
+  margin: 2vh 0vh;
+}
+
+.login-form-body{
+  /*background-color: red;*/
+  height: 100%;
+}
+
+/*   Send Message Form (max-width: 1500px) ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.send-msg-form-body{
+  margin: 10px;
+
+}
+
+
+}
+
+/*===============================================================*/
+/*===============================================================*/
+/*===============================================================*/
+@media (max-width: 1280px) {
+
+/*   Dashboard ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */  
+.section-left,
+.section-right{
+    /*background-color: green;*/
+    padding: 0px; 
+}
+
+.section-left img,
+.section-right img {
+  margin-top: 30px;
+}
+
+.textarea-alt{
+  /*background-color: red;*/
+  height: 75%;
+}
+
+
+.camera-box-container-row{
+  /*background-color: darkblue;*/
+  height: 44%;
+}
+/*   form-template ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */ 
+
+.menu-bar{
+  /*background-color: blue;*/
+}
+
+.form-area input{
+  margin-bottom: 5vh;
+}
+.form-area label {
+  margin-bottom: 0.5vh;
+}
+
+
+}
+
+/*===============================================================*/
+/*===============================================================*/
+/*===============================================================*/
+@media (max-width: 1080px){
+h1 {
+  font-size: 20pt;
+}  
+h2 {
+  font-size: 12pt;
+}  
+h3 {
+  font-size: 11pt;
+} 
+h4 {
+  font-size: 10pt;
+} 
+h5 {
+  font-size: 10pt;
+} 
+h6 {
+  font-size: 10pt;
+}
+
+.menu{
+  padding-top: 150px;
+}
+
+.menu-container{
+/*  background-color: grey;*/
+}
+
+.menu-container-inside{
+/*  background-color: darkblue;*/
+  width: 95%;
+}
+
+
+.main-container{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 95%;
+}
+
+.left-most{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bottom-inside{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.right-inside{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-left,
+.section-right{
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 10px;
+/*  background-color: black;*/
+}
+
+.section-left img, 
+.section-right img 
+{
+  margin-top: 20px;
+}
+
+.section-center{
+  width: 50%;
+  margin: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 35px;
+  padding-bottom: 10px;
+
+}
+
+.section-top-center{ /*index.html*/
+  padding: 5px;
+  width: 75%;
+  margin: 5px;
+  /*background-color: black;*/
+}
+
+.section-top-left{ /*index.html*/
+  margin: 0px;
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 10%;
+  padding: 0px;
+  padding-top: 5px;
+  display: block;
+  justify-content: left;
+  /*background-color: darkblue;*/
+  font-size: 8pt;
+  text-align: left;
+}
+
+.section-top-right{ /*index.html*/
+  margin: 0px;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 10%;
+  padding: 0px;
+  padding-top: 5px;
+  display: block;
+  float: right;
+  /*background-color: darkblue;*/
+}
+
+.section-icon {
+  width: 25px; 
+  height: 25px; 
+  margin-right: 10px;
+}
+
+.menu-icon {
+  width: 25px; 
+  height: 25px; 
+  margin-right: 5px;
+}
+
+.textarea-alt{
+  height: 65%;
+  border-radius: 5px;
+}
+
+.label-button {
+  padding-top: 10px;
+}
+
+.alert-button {
+  font-size: 9pt;
+  height: 100%;
+  margin-left: 8px;
+  border-radius: 5px;
+}
+
+.priority-button {
+  width: 70%;
+  font-size: 9pt;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.secondary-button {
+  width: 70%;
+  font-size: 9pt;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+/*++++++   Form Page (max-width: 1080px) +++++++++++++++++++++++++++++++++++++++++++++++++*/
+.menu-bar{
+  margin: 5px;
+  height: 12%;
+  /*background-color: grey;*/
+}
+.menu-bar .center-column{
+  /*background-color: red;*/
+}
+
+.menu-bar .center-top{
+  /*background-color: darkcyan;*/
+  height: 100%;
+}
+
+.menu-bar .section-top-left{
+  /*background-color: black;*/
+  height: 100%;
+  width: 12%;
+  margin: 5px;
+  padding: 10px;
+}
+
+.menu-bar .section-top-center{
+  /*background-color: darkgray;*/
+  height: 100%;
+  width: 70%;
+  margin: 5px;
+  padding: 15px 25px;
+}
+
+.menu-bar .section-top-right{
+  /*background-color: black;*/
+  height: 100%;
+  width: 12%;
+  margin: 5px;
+  padding: 10px;
+
+}
+
+.menu-bar .section-top-left i,
+.menu-bar .section-top-right i{
+  font-size: 25pt;
+  margin: 2px;
+}
+.form-body{
+  margin: 25px;
+  height: auto;
+}
+
+
+.form-inside h1{
+  /*margin-top: 8px;*/
+  font-size: 20pt;
+}
+
+.form-area form{
+  /*background-color: darkcyan;*/
+  width: 100%;
+}
+
+.form-area input{
+  padding-left: 10px;
+  margin-bottom: 1.5vh;
+}
+
+.form-area label {
+  margin-bottom: 1vh;
+  font-size: 10pt;
+}
+
+
+/*++++++  View Page (max-width: 1080px) ++++++++++++++++++++++++++++++++++++++++++++*/
+.table-body{
+  margin: 10px;
+}
+
+.table-inside{
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.table-inside h1{
+  margin-top: 8px;
+  font-size: 18pt;
+}
+.table-area{
+  margin-bottom: 15px;
+  margin-top: 10px;
+/*  background-color: darkblue;*/
+}
+
+
+.table-area table th {
+  font-size: 9pt;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.table-area table th i{
+  font-size: 8pt;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+
+.table-area table td {;
+  font-size: 10pt;
+/*  padding-top: 1.3vh;
+  padding-bottom: 1.3vh;*/
+  padding-left: 10px;
+}
+
+/*   Log In Page (max-width: 1080px) ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.login-containter{
+  padding-top: 10vh;
+  /*background-color: whitesmoke;*/
+}
+
+.logo-section img{
+  width: 45%;
+}
+
+
+} 
+/*===============================================================*/
+/*===============================================================*/
+/*===============================================================*/
+@media (max-width: 992px) and (orientation: portrait){
+  .logo-section img{
+  width: 35%;
+}
+}
+/*===============================================================*/
+/*===============================================================*/
+/*===============================================================*/
+@media (max-width: 992px) {
+
+h1 {
+  font-size: 8pt;
+}  
+h2 {
+  font-size: 8pt;
+}  
+h3 {
+  font-size: 8pt;
+} 
+h4 {
+  font-size: 8pt;
+} 
+h5 {
+  font-size: 8pt;
+} 
+h6 {
+  font-size: 8pt;
+}
+
+.menu{
+  padding-top: 180px;
+  width: 35%;
+  justify-content: left;
+  height: 100%;
+  position: fixed;
+  padding-left: 40px;
+  text-align: left;
+
+}
+
+.menu-container{
+  width: 100%;
+  /*background-color: grey;*/
+  display: block;
+  justify-content: left;
+  text-align: left;
+}
+
+.menu-container-inside{
+  /*background-color: darkcyan;*/
+  display: block;
+  justify-content: left;
+  text-align: left;
+  width: 100%;
+}
+.menu-item{
+  /*background-color: darkblue;*/
+  display: block;
+  justify-content: left;
+  text-align: left;
+  margin-bottom: 40px ;
+}
+
+.sublevel-1{
+  position: relative;
+  z-index: 8;
+}
+
+.sublevel-2{
+  position: relative;
+  /*background-color: grey;*/
+  left: 0;
+  top: 150%;
+  background: none;
+}
+
+.main-container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 95%;
+}
+
+.left-most{
+  padding: 10px;
+
+}
+
+
+.bottom-inside{
+ padding: 10px;
+}
+
+.right-inside{
+ padding: 10px;
+}
+
+.center-top{
+  display: flex;
+  justify-content: center;
+  height: 25%;
+  width: 100%;
+}
+.section-top-center{ /*index.html*/
+  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  width: 75%;
+  margin: 0px;
+  margin-left: 5px;
+  /*background-color: darkblue;*/
+
+}
+
+.section-top-left{ /*index.html*/
+  margin: 0px;
+  margin-top: 0px;
+  width: 10%;
+  padding-left: 10px;
+  padding-top: 5px;
+  display: block;
+  justify-content: left;
+  font-size: 18pt;
+  /*background-color: black;*/
+}
+
+.section-top-right{ /*index.html*/
+  margin: 0px;
+  margin-top: 0px;
+  width: 10%;
+  padding-left: 10px;
+  padding-top: 5px;
+  display: block;
+  justify-content: right;
+  font-size: 18pt;
+  /*background-color: black;*/
+}
+
+.section-left,
+.section-right{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+/*  background-color: black;*/
+}
+
+.section-left img, 
+.section-right img 
+{
+  margin-top: 5px;
+}
+
+.section-center{
+  width: 50%;
+  margin: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+
+}
+
+.section-icon {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 5px;
+}
+
+.menu-icon {
+  width: 20px; 
+  height: 20px;
+  padding: 0px; 
+  margin-right: 5px;
+}
+
+.textarea-alt{
+  height: 40%;
+  border-radius: 5px;
+}
+
+.label-button {
+  padding-top: 5px;
+}
+
+
+.alert-button {
+  font-size: 8pt;
+  padding: 0px;
+  margin-left: 8px;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.priority-button {
+  width: 70%;
+  font-size: 8pt;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.secondary-button {
+  width: 70%;
+  font-size: 8pt;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+/*++++++   Form Page (max-width: 992px) +++++++++++++++++++++++++++++++++++++++++++++++++*/
+.menu-bar{
+  margin: 5px;
+  height: 12%;
+  /*background-color: grey;*/
+}
+.menu-bar .center-column{
+  /*background-color: red;*/
+}
+
+.menu-bar .center-top{
+  /*background-color: darkcyan;*/
+  height: 100%;
+}
+
+.menu-bar .section-top-left{
+  /*background-color: black;*/
+  height: 100%;
+  width: 15%;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 10px;
+  display: block;
+  justify-content: center;
+}
+
+.menu-bar .section-top-center{
+  /*background-color: darkgray;*/
+  height: 100%;
+  width: 60%;
+  margin: 5px;
+  padding: 15px 25px;
+}
+
+.menu-bar .section-top-right{
+  /*background-color: black;*/
+  height: 100%;
+  width: 15%;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 10px;
+  display: block;
+  justify-content: center;
+
+}
+
+.menu-bar .section-top-left i,
+.menu-bar .section-top-right i{
+  font-size: 28pt;
+  margin: 2px;
+}
+
+.form-body{
+  margin: 25px;
+  margin-top: 50px;
+  height: auto;
+}
+
+
+.form-inside h1{
+  margin-top: 14px;
+  font-size: 25pt;
+}
+
+.form-area form{
+  /*background-color: darkcyan;*/
+  width: 100%;
+}
+
+.form-area input{
+  padding-left: 10px;
+  margin-bottom: 2.5vh;
+}
+
+.form-area label {
+  margin-bottom: 1vh;
+  font-size: 14pt;
+}
+
+.form-secondary-button,
+.form-primary-button{
+  font-size: 14pt;
+}
+
+
+/*++++++  View Page (max-width: 992px)++++++++++++++++++++++++++++++++++++++++++++*/
+.table-body{
+  margin: 10px;
+  margin-top: 50px;
+}
+
+.table-inside{
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.table-inside h1{
+  margin-top: 8px;
+  font-size: 18pt;
+}
+.table-area{
+  margin-bottom: 15px;
+  margin-top: 10px;
+/*  background-color: darkblue;*/
+}
+
+
+.table-area table th {
+  font-size: 9pt;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.table-area table th i{
+  font-size: 8pt;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+
+.table-area table td {;
+  font-size: 8pt;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+
+.entry-count h3,
+.search h3{
+  font-size: 14pt;
+}
+.entry-count,
+.search{
+}
+/*   Log In Page (max-width: 992px)++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.login-containter{
+  padding-top: 10vh;
+  /*background-color: whitesmoke;*/
+}
+
+.logo-section img{
+  width: 45%;
+}
+/*   Send Message Form (max-width: 992px)++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.send-msg-form-body{
+  margin: 6.5vh;
+}
+.send-msg-form-area{
+ /* background-color: red;*/
+  margin: 0px;
+}
+.send-msg-form-inside{
+  padding: 10px 10px;
+} 
+
+.send-msg-form-inside h1{
+  font-size: 18pt;
+}
+
+.send-msg-form-area label{
+  font-size: 12pt;
+}
+.message-type,
+.recepient-type,
+.message-content{
+  padding: 5px 0px;
+}
+}
+
+/*===============================================================*/
+/*===============================================================*/
+/*===============================================================*/
+
+@media (max-width: 850px) {
+h1 {
+  font-size: 20pt;
+}  
+h2 {
+  font-size: 19pt;
+}  
+h3 {
+  font-size: 18pt;
+} 
+h4 {
+  font-size: 16pt;
+} 
+h5 {
+  font-size: 12pt;
+} 
+h6 {
+  font-size: 10pt;
+} 
+
+.menu{
+  padding-top: 180px;
+  width: 35%;
+  justify-content: left;
+  height: 100%;
+  position: fixed;
+  padding-left: 40px;
+  text-align: left;
+  overflow-y: scroll;
+
+}
+
+.menu-container{
+  width: 100%;
+  /*background-color: grey;*/
+  display: block;
+  justify-content: left;
+  text-align: left;
+}
+
+.menu-container-inside{
+  /*background-color: darkcyan;*/
+  display: block;
+  justify-content: left;
+  text-align: left;
+  width: 100%;
+}
+.menu-item{
+  /*background-color: darkblue;*/
+  display: block;
+  justify-content: left;
+  text-align: left;
+  margin-bottom: 40px ;
+}
+
+.sublevel-1{
+  position: relative;
+}
+
+.sublevel-2{
+  position: relative;
+  /*background-color: grey;*/
+  left: 0;
+  top: 150%;
+  background: none;
+}
+
+
+
+.main-container{
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.flex-display {
+  flex-direction: column-reverse;
+}
+
+.right-most{
+  /*background-color: blue;*/
+  order: 3;
+  height: auto;
+}
+
+.right-inside{
+  height: auto;
+}
+
+.camera-box{
+  height: 135px;
+}
+.top-row{
+  /*background-color: grey;*/
+  height: auto;
+}
+
+.top-right{
+  /*background-color: green;*/
+  display: grid;
+}
+
+.left-most-outside{
+/*  display: s;*/
+  /*background-color: red;*/
+  order: 2;
+}
+
+.left-most{
+  height: auto;
+}
+
+.center-column{
+  order: 1;
+  margin-bottom: 10px;
+  width: 100%;
+/*  background-color: darkblue;*/
+}
+
+.center-top{
+  width: 100%;
+/*  background-color: darkcyan;*/
+}
+.section-top-center{ /*index.html*/
+  width: 75%;
+/*  background-color: darkblue;*/
+
+}
+
+.section-top-left{ /*index.html*/
+  width: 10%;
+  font-size: 18pt;
+/*  background-color: black;*/
+}
+
+.section-top-right{ /*index.html*/
+  width: 10%;
+  font-size: 18pt;
+/*  background-color: black;*/
+}
+
+
+.section-center,
+.section-center-inside{
+  height: auto;
+}
+
+.bottom-row{
+  /*background-color: yellow;*/
+  height: auto;
+}
+
+.bottom-row-box{
+  display: block;
+}
+
+.bottom-inside{
+  display: block;
+  height: auto;
+  margin: 5px;
+}
+
+.textarea-alt{
+  height: 75px;
+}
+
+/*++++++   Form Page (max-width: 850px) +++++++++++++++++++++++++++++++++++++++++++++++++*/
+.menu-bar{
+  margin: 5px;
+  height: 12%;
+  /*background-color: grey;*/
+}
+.menu-bar .center-column{
+  /*background-color: red;*/
+}
+
+.menu-bar .center-top{
+  /*background-color: darkcyan;*/
+  height: 100%;
+}
+
+.menu-bar .section-top-left{
+  /*background-color: black;*/
+  height: 100%;
+  width: 12%;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 10px;
+  display: block;
+  justify-content: left;
+}
+
+.menu-bar .section-top-center{
+  /*background-color: darkgray;*/
+  height: 100%;
+  width: 70%;
+  margin: 5px;
+  padding: 15px 25px;
+}
+
+.menu-bar .section-top-right{
+  /*background-color: black;*/
+  height: 100%;
+  width: 12%;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 10px;
+  display: block;
+  justify-content: right;
+
+}
+
+.menu-bar .section-top-left i,
+.menu-bar .section-top-right i{
+  font-size: 25pt;
+  margin: 2px;
+}
+
+.form-body{
+  margin: 25px;
+  margin-top: 50px;
+  height: auto;
+}
+
+
+.form-inside h1{
+  margin-top: 14px;
+  font-size: 25pt;
+}
+
+.form-area form{
+  /*background-color: darkcyan;*/
+  width: 100%;
+}
+
+.form-area input{
+  padding-left: 10px;
+  /*margin-bottom: 20px;*/
+}
+
+.form-area label {
+  /*margin-top: 15px;*/
+  font-size: 14pt;
+}
+
+.form-secondary-button,
+.form-priority-button{
+  font-size: 14pt;
+}
+
+
+/*++++++  View Page (max-width: 850px) ++++++++++++++++++++++++++++++++++++++++++++*/
+.table-body{
+  margin: 10px;
+  margin-top: 50px;
+}
+
+.table-inside{
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.table-inside h1{
+  margin-top: 8px;
+  font-size: 18pt;
+}
+.table-area{
+  margin-bottom: 15px;
+  margin-top: 10px;
+/*  background-color: darkblue;*/
+}
+
+
+.table-area table th {
+  font-size: 9pt;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.table-area table th i{
+  font-size: 8pt;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+
+.table-area table td {;
+  font-size: 8pt;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+
+/*   Log In Page (max-width: 850px) ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.login-containter{
+  padding-top: 10vh;
+  /*background-color: whitesmoke;*/
+}
+
+.logo-section img{
+  width: 25%;
+}
+
+.login-form-inside div {
+  padding: 5px;
+  /*background-color: rgba(45, 45, 45, 0.5);*/
+}
+
+.login-form-inside h2{
+  font-size: 14pt;
+  /*background-color: green;*/
+  margin-top: 5px;
+}
+
+.login-form-area form{
+  /*background-color: darkcyan;*/
+
+}
+
+.login-form-area input{
+  font-size: 10pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-sention{
+  /*background-color: darkgrey;*/
+  padding: 0px;
+  margin: 0px;
+}
+.button-section-inside{
+  padding: 5px;
+}
+
+.button-section-inside .form-priority-button{
+  /*background-color: grey;*/
+  font-size: 10pt;
+  margin: 5px;
+}
+
+
+  }
+
+/*===============================================================*/
+/*===============================================================*/
+/*===============================================================*/
+
+@media (max-width: 450px) {
+  h1 {
+  font-size: 20pt;
+}  
+h2 {
+  font-size: 19pt;
+}  
+h3 {
+  font-size: 18pt;
+} 
+h4 {
+  font-size: 16pt;
+} 
+h5 {
+  font-size: 12pt;
+} 
+h6 {
+  font-size: 10pt;
+} 
+
+.menu{
+  padding-top: 170px;
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  padding-left: 20px;
+  text-align: left;
+  overflow-y: scroll;
+
+}
+
+.menu-container{
+  width: 100%;
+  /*background-color: grey;*/
+  display: block;
+  justify-content: left;
+  text-align: left;
+}
+
+.menu-container-inside{
+  /*background-color: darkcyan;*/
+  display: block;
+  justify-content: left;
+  text-align: left;
+  width: 100%;
+}
+.menu-item{
+  /*background-color: darkblue;*/
+  display: block;
+  justify-content: left;
+  text-align: left;
+  margin-bottom: 40px ;
+}
+
+.sublevel-1{
+  position: relative;
+}
+
+
+.main-container{
+  margin: 0px;
+  padding: 10px;
+  padding-top: 0px;
+  /*background-color: black;*/
+  width: 100%;
+}
+.left-most-outside{
+ display: flex;
+}
+
+.flex-display {
+  flex-direction: column-reverse;
+}
+
+
+.right-most{
+  /*background-color: blue;*/
+}
+
+.top-row{
+  /*background-color: grey;*/
+}
+
+.top-right{
+  /*background-color: green;*/
+  flex-direction: column-reverse;
+}
+
+.left-most-outside{
+  /*background-color: red;*/
+}
+
+.left-most{
+  margin: 5px;
+}
+
+.center-column{
+/*  background-color: darkorange;*/
+  margin: 0px;
+  padding: 5px;
+
+}
+
+.center-top{
+  width: 100%;
+  /*background-color: rgba(204, 204, 204, 0.2);*/
+  margin: 0px;
+  padding: 0;
+  height: 12%;
+}
+.section-top-center{ /*index.html*/
+  width: 100%;
+  height: 55%;
+/*  background-color: darkblue;*/
+  margin: 0px;
+  padding: 10px 20px;
+  display: block;
+  justify-content: center;
+  order: 1;
+}
+
+.section-top-left{
+  width: 50%;
+  height: 50%;
+  font-size: 8pt;
+/*  background-color: darkgray;*/
+  margin: 0px;
+  padding: 0px 25px;
+  display: block;
+  justify-content: center;
+  order: 2;
+}
+
+.section-top-right{ /*index.html*/
+ width: 50%;
+  height: 50%;
+  font-size: 8pt;
+/*  background-color: black;*/
+  margin: 0px;
+  padding: 0px  25px;
+  display: block;
+  justify-content: center;
+  order: 3;
+}
+
+.section-left,
+.section-right{
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 8px;
+  /*background-color: black;*/
+}
+
+.section-left img, 
+.section-right img 
+{
+  margin-top: 5px;
+}
+
+.section-center{
+  width: 45%;
+  margin: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+
+}
+
+/*++++++   Form Page (max-width: 450px)+++++++++++++++++++++++++++++++++++++++++++++++++*/
+.menu-bar{
+  margin: 5px;
+  margin-top: 0px;
+  height: 12%;
+  padding: 0px;
+  /*background-color: grey;*/
+}
+.menu-bar .center-column{
+  /*background-color: red;*/
+  margin: 0px;
+  padding: 0px; 
+}
+
+.menu-bar .center-top{
+  width: 100%;
+  /*background-color: darkcyan;*/
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu-bar .section-top-left{
+  width: 50%;
+  height: 50%;
+  font-size: 8pt;
+  /*background-color: darkgray;*/
+  margin: 0px;
+  padding: 10px 20px;
+  display: block;
+  justify-content: center;
+  order: 2;
+}
+
+.menu-bar .section-top-center{
+  width: 100%;
+  height: 55%;
+  /*background-color: darkblue;*/
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  display: block;
+  justify-content: center;
+  order: 1;
+}
+
+.menu-bar .section-top-right{
+  width: 50%;
+  height: 50%;
+  font-size: 8pt;
+  /*background-color: black;*/
+  margin: 0px;
+  padding: 10px  20px;
+  display: block;
+  justify-content: center;
+  order: 3;
+
+}
+
+.menu-bar .section-top-left i,
+.menu-bar .section-top-right i{
+  /*background-color: red;*/
+  font-size: 22pt;
+  margin: 8px;
+  margin-right: 10px;
+}
+
+.form-body{
+  margin: 10px;
+  margin-top: 70px;
+  height: auto;
+  }
+
+.form-inside{
+  margin: 0px;
+  padding: 0px;
+}
+
+.form-inside h1{
+  margin-top: 20px;
+  font-size: 25pt;
+}
+
+.form-area form{
+  /*background-color: darkcyan;*/
+  width: 100%;
+}
+
+.form-area input{
+  padding-left: 10px;
+  margin-bottom: 1vh;
+}
+
+.form-area label {
+  /*margin-top: 10px;*/
+  font-size: 14pt;
+}
+
+.form-body .menu-button,
+.form-body .menu-buttom{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-secondary-button,
+.form-priority-button{
+  font-size: 14pt;
+  padding: 5px 10px;
+}
+
+
+/*++++++  View Page (max-width: 450px)++++++++++++++++++++++++++++++++++++++++++++*/
+.table-body{
+  margin: 10px;
+  margin-top: 50px;
+}
+
+.table-inside{
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.table-inside h1{
+  margin-top: 8px;
+  font-size: 18pt;
+}
+.table-area{
+  margin-bottom: 15px;
+  margin-top: 10px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+/*  background-color: darkblue;*/
+}
+
+.table-body h3,
+.table-bottom p{
+  font-size: 10pt;
+}
+
+.table-bottom{
+    padding: 0px;
+  margin: 0px;
+}
+.table-bottom div,
+.menu-botton{
+
+  display: flex;
+  justify-content: center;
+}
+
+.entry-count{
+  text-align: left;
+}
+
+.search{
+  text-align: left;
+}
+
+.table-area table th {
+  font-size: 9pt;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.table-area table th i{
+  font-size: 8pt;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+
+.table-area table td {;
+  font-size: 8pt;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+
+/*   Log In Page (max-width: 450px)++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.login-containter{
+  padding-top: 10vh;
+  /*background-color: whitesmoke;*/
+}
+
+.logo-section img{
+  width: 65%;
+}
+
+
+
+}
+
+
+
+/*=====  End of RESPONSIVE  ======*/

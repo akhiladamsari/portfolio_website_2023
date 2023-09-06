@@ -1,0 +1,601 @@
+/*
+ * Redbubble Dashboard
+ * 
+ */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll; 
+  background-color: #f5f6f8;
+  height: 100vh;   
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100; 
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+
+  font-family: 'Oswald', sans-serif;
+  /*margin-top: 5px; */
+  color: #011839;
+
+}
+
+h1 {
+  font-size: 32pt;
+}
+h2 {
+  font-size: 28pt;
+}  
+h3 {
+  font-size: 22pt;
+} 
+h4 {
+  font-size: 20pt;
+} 
+h5 {
+  font-size: 16pt;
+} 
+h6 {
+  font-size: 14pt;
+} 
+
+p{
+  font-size: 12pt;
+}
+
+.text-white{
+  color: white;
+}
+
+.text-grey{
+  color: #666666;
+}
+
+.text-blue{
+  color: #340C0B;
+}
+
+.main-container{
+  height: 100vh;
+  background-color: #f5f6f8;
+}
+
+.navigation-expanded{
+  background-color: #340C0B;
+  height: 100vh;
+  width: 18%;
+  padding: 40px 60px;
+}
+
+.navigation-expanded .navigation-list{
+  margin-bottom: 20px;
+}
+
+.navigation-expanded .navigation-list h3{
+  display: flex;
+  /*background-color: black;*/
+}
+
+.navigation-expanded ul{
+  font-size: 20pt;
+  color: white;
+  text-decoration: none;
+  padding-top: 16px;
+  list-style: none;
+  padding-left: 15px;
+  /*background-color: darkgreen;*/
+}
+
+.navigation-expanded li{
+  text-decoration: none;
+  padding-top: 18px;
+  font-size: 16pt;
+  font-weight: 200;
+  /*background-color: grey;*/
+  display: flex;
+}
+
+.navigation-expanded .navigation-list i{
+  font-size: 16pt;
+  margin-right: 15px;
+  padding-top: 5px;
+/*  background-color: blue;*/
+}
+
+.navigation-expanded  .title{
+  margin-bottom: 20px;
+}
+.navigation-expanded .dashboard-button{
+  width: 100%;
+}
+
+.navigation-expanded .dashboard-button button{
+  background-color: #aa100d;
+  padding: 8px 15px;
+  width: 100%;
+  color: white;
+  font-size: 28pt;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  display: flex;
+}
+
+.navigation-expanded .dashboard-button button i{
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.navigation-expanded .navigation-list h3{
+  color: white;
+}
+
+.menu-title{
+  display: inline-flex;
+  width: 100%;
+  color: white;
+}
+
+.menu-title div{
+  width: 90%;
+  /*background-color: black;*/
+}
+
+.menu-title div h1{
+  color: white;
+}
+
+.menu-button{
+  align-content: right; 
+  width: 10%;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button button{
+  background:none;
+  border: none;
+  /*background-color: grey;*/
+}
+
+.menu-button button i{
+  font-size: 25pt;
+}
+/*----------------------------------------------*/
+.navigation-collapsed{
+  background-color: #340C0B;
+  height: 100vh;
+  width: 5%;
+  padding: 50px 40px;
+  display: none;
+}
+
+
+.navigation-collapsed .navigation-list{
+  margin-bottom: 20px;
+}
+
+.navigation-collapsed .navigation-list h3{
+  display: flex;
+  margin-top: 20px;
+}
+
+.navigation-collapsed .navigation-list h3 i{
+  font-size: 25pt;
+  text-shadow: 1px 1px 2px white;
+}
+
+.navigation-collapsed ul{
+  font-size: 20pt;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
+  /*background-color: darkgreen;*/
+}
+
+.navigation-collapsed li{
+  text-decoration: none;
+  padding-top: 22px;
+  font-size: 16pt;
+  font-weight: 200;
+  /*background-color: grey;*/
+  display: flex;
+}
+
+.navigation-collapsed .navigation-list i{
+  font-size: 18pt;
+  margin-right: 15px;
+  padding-top: 5px;
+}
+
+
+.navigation-collapsed  .title{
+  margin-bottom: 20px;
+}
+.navigation-collapsed .dashboard-button{
+  margin-right: 0;
+}
+.navigation-collapsed .dashboard-button button{
+  background-color: #aa100d;
+  color: white;
+  font-size: 28pt;
+  border-radius: 5px;
+  font-weight: 500;
+  display: flex;
+  margin-bottom: 20px;
+}
+/*-------------------------------------------------*/
+.header-row{
+  /*background-color: greenyellow;*/
+  height: 6vh;
+  margin-bottom: 20px;
+}
+
+.header-title{
+  /*background-color: blue;*/
+  width: 60%;
+}
+
+.header-buttons{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /*background-color: red;*/
+  width: 40%;
+  /*background-color: greenyellow;*/
+  /*padding-top: 10px;*/
+}
+.header-buttons button{
+  background-color: #aa100d;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  font-size: 20pt;
+  border-radius: 35px;
+  /*margin-bottom: 20px;*/
+  font-weight: 500;
+  margin-right: 25px;
+}
+
+.header-buttons button i{
+  color: white;
+  margin-right: 10px;
+  font-size: 20pt;
+}
+
+.header-buttons i{
+  color: #011839;
+  font-size: 25pt;
+  margin-right: 25px;
+}
+
+.content{
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 80%;
+  padding: 40px;
+}
+
+.shadow{
+  box-shadow: 5px 5px 4px #888888;
+}
+
+
+.body-row{
+  /*background-color: green;*/
+  height: 86vh;
+}
+/*----------------------------------------------------*/
+.stats{
+  /*background-color: darkblue;*/
+  width: 75%;
+}
+
+.stat-numbers{
+  /*background-color: seagreen;*/
+  height: 24%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: left;
+}
+
+.earning{
+  /*background-color: darkred;*/
+  height: 100%;
+  padding: 0px 10px;
+  width: 33%;
+}
+.visitors{
+  /*background-color: darkblue;*/
+  height: 100%;
+  padding: 0px 10px;
+  width: 33%;
+}
+.favourites{
+  /*background-color: darkkhaki;*/
+  height: 100%;
+  padding: 0px 10px;
+  width: 34%;
+}
+.stat-inner{
+  padding: 20px;
+}
+.stat-no{
+  font-size: 50pt;
+  font-weight: 300;
+  /*background-color: darkblue;*/
+}
+.stat-inner div{
+  /*background-color: darkgrey;*/
+  /*height: 100%;*/
+  width: 100%;
+}
+
+.stat-inner,
+.graphs-inner,
+.order-inner,
+.product-inner{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  border: solid;
+  border-width: 3px;
+  border-color: #eee;
+
+}
+.stat-inner h3,
+.stat-inner h1{
+  margin-bottom: 20px;
+}
+
+.status-row-bottom{
+  margin: 0px;
+  /*background-color: blue;*/
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+}
+.status-row-bottom i{
+  font-size: 16pt;
+  margin-right: 10px;
+  color: #7ac943;
+  /*background-color: lightblue;*/
+}
+.status-row-bottom h6{
+  margin-right: 10px;
+  color: #7ac943;
+  /*background-color: lightblue;*/
+}
+.status-row-bottom p{
+  /*background-color: lightblue;*/
+}
+/*----------------------------------------------------*/
+.graphs{
+  /*background-color: blue;*/
+  height: 31%;
+  margin-bottom: 20px;
+}
+
+.graphs-inner{
+  /*padding: 25px;*/
+  padding-left: 35px;
+  padding-top: 20px;
+} 
+
+.graphs-inner-container{
+  /*background-color: grey;*/
+  height: 100%;
+  width: 100%;
+  display: block;
+  float: left;
+
+}
+
+.graphs-inner-container .row{
+  
+  /*background-color: green;*/
+}
+
+.graphs-inner .row{
+  /*background-color: blue;*/
+  float: left;
+  width: 100%;
+  height: 18%;
+}
+
+.graphs-inner-container .graph-title{
+  /*background-color: green;*/
+  width: 60%;
+}
+.graphs-inner-container .graph-more,
+.graphs-inner-container .graph-more-payment{
+  /*background-color: grey;*/
+  width: 40%;
+}
+
+#chartdiv1 {
+  width: 100%;
+  height: 225px;
+}
+
+#chartdiv2 {
+  width: 100%;
+  height: 225px;
+  max-width: 100%;
+}
+
+.graph-container{
+  /*background-color: grey;*/
+  width: 100%;
+  margin-top: 30px;
+  margin-left: -10px;
+}
+
+.earning-summary{
+  /*background-color: aquamarine;*/
+  height: 100%;
+  padding: 0px 10px;
+  width: 50%;
+}
+
+.traffic{
+  /*background-color: darkkhaki;*/
+  height: 100%;
+  padding: 0px 10px;
+  width: 50%;
+}
+
+.graph-more-payment p{
+  padding-top: 9px;
+  padding-right: 15px;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+/*  background-color: grey;*/
+}
+
+.graph-more .button-active{
+  background-color: black;
+  color: white;
+  padding-top: 7px;
+  border-radius: 15px 0px 0px 15px;
+  width: 50%;
+}
+.graph-more .button-deactive{
+  background-color: #e6e6e6;
+  color: black;
+  padding-top: 7px;
+  border-radius: 0px 15px 15px 0px;
+  width: 50%;
+
+}
+
+.graph-more .button-active p,
+.graph-more .button-deactive p{
+  text-align: center;
+}
+/*----------------------------------------------------*/
+.orders{
+  /*background-color: green;*/
+  height: 41%;
+  padding: 0px 10px;
+}
+
+.order-inner{
+  /*background-color: gray;*/
+  padding: 25px;
+  padding-left: 35px;
+
+}
+
+.order-inner-container{
+  height: 100%;
+}
+
+.order-table{
+  font-size: 12pt;
+  width: 100%;
+}
+
+.order-table-header{
+  font-size: 14pt;
+  font-weight: 300;
+}
+
+.order-table th{
+  text-align: left;
+}
+
+.order-table tr{
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+
+}
+.order-table .product-thumbnail{
+  height: 75%;
+}
+/*----------------------------------------------------*/
+.popular-products{
+  /*background-color: darkcyan;*/
+  padding: 0px 20px;
+  width: 25%;
+}
+
+.product-thumbnail{
+  height: 80%;
+  width: 40px;
+  background-color: grey;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.product-inner{
+  /*background-color: gray;*/
+  padding: 25px;
+  padding-left: 35px;
+}
+
+.product-inner-container{
+  height: 100%;
+  /*background-color: blue;*/
+  overflow-y: hidden;
+}
+.product-section-1{
+
+}
+
+.product-table{
+  font-size: 14pt;
+  width: 100%;
+}
+
+.product-table tr{
+  height: 62px;
+  margin-bottom: 25px;
+}
+.product-table td{
+  /*background-color: grey;*/
+}
+.product-table .product-thumbnail{
+  margin-right: 10px;
+}
+
+.product-section-2{
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Redbubble Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <meta name="description" content="Cognition">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+
+</head>
+<body>
+    <section id="main-containter" class="main-container">
+        <div class="row top-row">
+            <div class="navigation-expanded" id="navigation-expanded">
+                <div class="title text-white menu-title">
+                    <div>
+                        <h1>REDBUBBLE </h1>
+                    </div>
+                    <div class="menu-button">
+                        <button onclick="collapseNav()">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dashboard-button text-white">
+                    <button>
+                        <i class="fas fa-grip-horizontal"></i>
+                        <span>     Dashboard</span>
+                    </button>
+                </div>
+                <div class="navigation-list  text-white">
+                    <h3>
+                        <i class="fas fa-pencil-ruler"></i>
+                        <span class="menu-title" id="menu-title"> Artist Tools</span>
+                    </h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-tasks"></i>
+                            <span class="menu-title" id="menu-title"> Activity Feed</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-store"></i>
+                            <span class="menu-title" id="menu-title"> Shop Settings</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-share-square"></i>
+                            <span class="menu-title" id="menu-title"> Share your work</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-lock"></i>
+                            <span class="menu-title" id="menu-title"> Protect your work</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-coins"></i>
+                            <span class="menu-title" id="menu-title"> Product pricing</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-line"></i>
+                            <span class="menu-title" id="menu-title"> Google analytics</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="menu-title" id="menu-title"> Sales history</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-money-check-alt"></i>
+                            <span class="menu-title" id="menu-title"> Payment history</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-comment-dots"></i>
+                            <span class="menu-title" id="menu-title"> Message To Buyer</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-link"></i>
+                            <span class="menu-title" id="menu-title"> Link to other sites</span>
+                        </li>
+                    </ul><br>
+                    <h3><i class="fas fa-user-cog"></i><span class="menu-title" id="menu-title"> Account Settings</span></h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-user-circle"></i>
+                            <span class="menu-title" id="menu-title"> Edit profile</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-wallet"></i>
+                            <span class="menu-title" id="menu-title"> Edit payment details</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-key"></i>
+                            <span class="menu-title" id="menu-title"> Change password</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-trash-alt"></i>
+                            <span class="menu-title" id="menu-title"> Cancel account</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navigation-collapsed" id="navigation-collapsed">
+                <div class="title text-white" style="display: inline-flex;width: 100%;">
+                    <div>
+                        <button  style="background:none;border: none;" onclick="expandNav()"><i class="fas fa-bars" style="font-size: 25pt;"></i></button>
+                    </div>
+                </div>
+                <div class="dashboard-button text-white">
+                    <button><i class="fas fa-grip-horizontal"></i></button>
+                </div>
+                <div class="navigation-list  text-white">
+                    <h3 style="color: white;"><i class="fas fa-pencil-ruler"></i></h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-tasks"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-store"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-share-square"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-lock"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-coins"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-line"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-shopping-bag"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-money-check-alt"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-comment-dots"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-link"></i>
+                        </li>
+                    </ul><br>
+                    <h3 style="color: white;;"><i class="fas fa-user-cog"></i></h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-user-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-wallet"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-key"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-trash-alt"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content" id="content">
+                <div class="header-row row">
+                    <div class="header-title">
+                        <h1>Overview</h1>
+                    </div>
+                    <div class="header-buttons">
+                        <button><i class="fas fa-upload"></i> Add New Work</button>
+                        <a href="#"><i class="fas fa-chart-bar"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-bell"></i></a>
+                    </div>
+                </div>
+                <div class="body-row row">
+                    <div class="stats">
+                        <div class="stat-numbers row">
+                            <div class="earning">
+                                <div class="stat-inner shadow">
+                                    <div>
+                                        <h3>Earning This Month</h3>
+                                        <h1 class="stat-no">$145.00</h1>
+                                        <div class="status-row-bottom row">
+                                            <i class="fas fa-arrow-up"></i><h6> 15%</h6><p class="text-grey">  Since Last Month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="visitors">
+                                <div class="stat-inner  shadow">
+                                    <div>
+                                        <h3>Visitors This Month</h3>
+                                        <h1 class="stat-no">13,093</h1>
+                                        <div class="status-row-bottom row">
+                                            <i class="fas fa-arrow-up"></i><h6> 16%</h6><p class="text-grey">  Since Last Month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="favourites">
+                                <div class="stat-inner shadow">
+                                    <div>
+                                        <h3>Favourites This Month</h3>
+                                        <h1 class="stat-no">324</h1>
+                                        <div class="status-row-bottom row">
+                                            <i class="fas fa-arrow-up"></i><h6> 32%</h6><p class="text-grey">  Since Last Month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphs row">
+                            <div class="earning-summary">
+                                <div class="graphs-inner shadow">
+                                    <div class="graphs-inner-container">
+                                        <div class="row">
+                                            <div class="graph-title">
+                                                <h4>Earning Summary</h4>
+                                            </div>
+                                            <div class="graph-more-payment">
+                                                <p>View payment history</p>
+                                            </div>
+                                        </div>
+                                        <div class="graph-container">
+                                            <div id="chartdiv1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="traffic">
+                                <div class="graphs-inner shadow">
+                                    <div class="graphs-inner-container">
+                                        <div class="row">
+                                            <div class="graph-title">
+                                                <h4>Audience Traffic Sources</h4>
+                                            </div>
+                                            <div class="graph-more">
+                                                <div class="row" style="margin: 0px;padding: 0px;">
+                                                    <div class="button-active">
+                                                       <p>All Traffic</p>
+                                                   </div>
+                                                   <div class="button-deactive">
+                                                       <p>My Share</p>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="graph-container">
+                                        <div id="chartdiv2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orders row">
+                        <div class="order-inner shadow">
+                            <div class="order-inner-container">
+                                <h4>Order Summary</h4>
+                                <table class="order-table">
+                                    <tr class="order-table-header">
+                                        <th>Artwork</th>
+                                        <th>Total Price</th>
+                                        <th>Artist Share</th>
+                                        <th>Products Sold</th>
+                                        <th>Order Status</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img>Don't Wake me up - Jimin BTS</td>
+                                        <td>$8.81</td>
+                                        <td>$2.31</td>
+                                        <td>02</td>
+                                        <td>Shipped</td>
+                                        <td>View Order ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img>BTS in The Soop</td>
+                                        <td>$8.81</td>
+                                        <td>$2.31</td>
+                                        <td>02</td>
+                                        <td>Shipped</td>
+                                        <td>View Order ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img>I got my own back - Motivational</td>
+                                        <td>$8.81</td>
+                                        <td>$2.31</td>
+                                        <td>02</td>
+                                        <td>Shipped</td>
+                                        <td>View Order ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img>No More Dream - BTS</td>
+                                        <td>$8.81</td>
+                                        <td>$2.31</td>
+                                        <td>02</td>
+                                        <td>Shipped</td>
+                                        <td>View Order ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img>No More Dream - BTS</td>
+                                        <td>$8.81</td>
+                                        <td>$2.31</td>
+                                        <td>02</td>
+                                        <td>Shipped</td>
+                                        <td>View Order ></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-products">
+                    <div class="product-inner shadow">
+                        <div class="product-inner-container">
+                            <div class="product-section-1">
+                                <h4>Popular Products</h4><br>
+                                <table class="product-table">
+                                    <tr>
+                                        <td>
+                                            <img class="product-thumbnail" src="img/Quotes-01.png"></img>
+                                        </td>
+                                        <td>Be Real not Perfect - BTS Suga</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img></td>
+                                        <td>Don't Wake me up - Jimin BTS</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img></td>
+                                        <td>Appreciate Everything - BTS Quotes</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img></td>
+                                        <td>BTS Borahe - I Purple You</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img></td>
+                                        <td>Life is Sweet as Honey BTS Dynamite</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img></td>
+                                        <td>Can't Hold me Down - BTS ON - BTS Quotes</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="product-section-2">
+                                <h4>Favourite Products</h4><br>
+                                <table class="product-table">
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img></td>
+                                        <td>Be Real not Perfect - BTS Suga</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img></td>
+                                        <td>Don't Wake me up - Jimin BTS</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img></td>
+                                        <td>Appreciate Everything - BTS Quotes</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img></td>
+                                        <td>BTS Borahe - I Purple You</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img></td>
+                                        <td>Life is Sweet as Honey BTS Dynamite</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="product-thumbnail" src="img/Quotes-01.png"></img></td>
+                                        <td>Can't Hold me Down - BTS ON - BTS Quotes</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- External JS -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="vendor/bootstrap/popper.min.js"></script>
+<script src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="vendor/select2/select2.min.js "></script>
+<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+<script src="vendor/isotope/isotope.min.js"></script>
+<script src="vendor/lightcase/lightcase.js"></script>
+<script src="vendor/waypoints/waypoint.min.js"></script>
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+
+<!-- Main JS -->
+<script type="text/javascript" src="js/mainJS.js"></script>
+<script type="text/javascript"src="js/charts.js"></script>
+<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>

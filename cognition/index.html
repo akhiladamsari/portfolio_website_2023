@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cognition</title>
+    <link rel="icon" type="image/x-icon" href="img/AD Logo-11.png">
+    <meta name="description" content="Cognition">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Armata&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.style.min.css">
+    <link rel="stylesheet" href="css/responsive.style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script>
+		
+      	
+</script>
+
+</head>
+<body style="background: url(img/bg-01.png) no-repeat center center fixed; background-size: cover;">
+	
+
+<section id="firemenu" class="menu">
+	<div class="menu-container">
+		<div class="menu-container-inside">
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="fire()">Fire 
+			  	<i class="fas fa-chevron-down"></i>
+			  </button>
+				<div class="sublevel-1" id="fire">
+				    <a href="form-template.html">Element Mapping</a>
+				    <a href="form-template.html">Clear Map</a>
+				    <a href="form-template.html">Floor Plan</a>
+				    <button class="sublevel-item-button" onclick="fireruleEngine()">Rule Engine <i class="fas fa-chevron-down"></i></button>
+				    <div class="sublevel-2" id="fireruleEngine">
+					    <a href="#">Add Rule</a>
+					    <a href="#">View Rule</a>
+					</div>
+				</div>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="IMS()">IMS
+			  	<i class="fas fa-chevron-down"></i>
+			  </button>
+				<div class="sublevel-1" id="IMS">
+				    <a href="view-template.html">Element Mapping</a>
+				    <a href="view-template.html">Clear Map</a>
+				    <a href="view-template.html">Floor Plan</a>
+				    <button class="sublevel-item-button" onclick="imsruleEngine()">Rule Engine <i class="fas fa-chevron-down"></i></button>
+				    <div class="sublevel-2" id="imsruleEngine">
+					    <a href="#">Add Rule</a>
+					    <a href="#">View Rule</a>
+					</div>
+				</div>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="visualConnect()">Visual Connect
+			  	<i class="fas fa-chevron-down"></i>
+			  </button>
+				<div class="sublevel-1" id="visualConnect">
+				    <a href="#">Add Video Connect</a>
+				    <a href="#">View Video Connect</a>
+				    <button class="sublevel-item-button" onclick="vcruleEngine()">Rule Engine <i class="fas fa-chevron-down"></i></button>
+				    <div class="sublevel-2" id="vcruleEngine">
+					    <a href="#">Add Rule</a>
+					    <a href="#">View Rule</a>
+					</div>
+				</div>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="response()">Response
+			  	<i class="fas fa-chevron-down"></i>
+			  </button>
+				<div class="sublevel-1" id="response">
+				    <a href="#">Fire Alarm Reply</a>
+				    <a href="#">Fire Alarm Reply Location</a>
+				    <button class="sublevel-item-button" onclick="resruleEngine()">Rule Engine <i class="fas fa-chevron-down"></i></button>
+				    <div class="sublevel-2" id="resruleEngine">
+					    <a href="#">Add Rule</a>
+					    <a href="#">View Rule</a>
+					</div>
+				</div>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="externalAlert()">External Alert 
+			  </button>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="evacuation()">Evacuation 
+			  	<i class="fas fa-chevron-down"></i>
+			  </button>
+				<div class="sublevel-1" id="evacuation">
+				    <a href="#">Add Epaper Device</a>
+				    <a href="#">View Epaper Device</a>
+				    <button class="sublevel-item-button" onclick="evacruleEngine()">Rule Engine <i class="fas fa-chevron-down"></i></button>
+				    <div class="sublevel-2" id="evacruleEngine">
+					    <a href="#">Add Rule</a>
+					    <a href="#">View Rule</a>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</div>
+</section>
+
+<section id="listmenu" class="menu">
+	<div class="menu-container">
+		<div class="menu-container-inside">
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="staffConnect()">Staff Connect  
+			  	<i class="fas fa-chevron-down"></i>
+			  </button>
+				<div class="sublevel-1" id="staffConnect">
+				    <a href="send-message-form.html">Add SMS Group</a>
+				    <a href="send-message-form.html">View SMS Group</a>
+				    <a href="send-message-form.html">Add Email Group</a>
+				    <a href="send-message-form.html">View Email Group</a>
+				    <a href="send-message-form.html">Add Staff Connect</a>
+				    <a href="send-message-form.html">View Staff Connect</a>
+				    <button class="sublevel-item-button" onclick="SCruleEngine()">Rule Engine <i class="fas fa-chevron-down"></i></button>
+				    <div class="sublevel-2" id="SCruleEngine">
+					    <a href="#">Add Rule</a>
+					    <a href="#">View Rule</a>
+					</div>
+				</div>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="crisisMng()">Crisis Management
+			  	<i class="fas fa-chevron-down"></i>
+			  </button>
+				<div class="sublevel-1" id="crisisMng">
+				    <a href="#">Event History</a>
+				    <a href="#">Upload File</a>
+				    <a href="#">View File</a>
+				    <button class="sublevel-item-button" onclick="CMruleEngine()">Rule Engine <i class="fas fa-chevron-down"></i></button>
+				    <div class="sublevel-2" id="CMruleEngine">
+					    <a href="#">Add Rule</a>
+					    <a href="#">View Rule</a>
+					</div>
+				</div>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="itemRqst()">Item Request 
+			  	<i class="fas fa-chevron-down"></i>
+			  </button>
+				<div class="sublevel-1" id="itemRqst">
+				    <a href="#">Add Item Request</a>
+				    <a href="#">View Item Request</a>
+				</div>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="offers()">Offers 
+			  </button>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="my2doQ()">My 2 do Q  
+			  </button>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="todoQ()">2 do Q  
+			  </button>
+			</div> 
+		</div>
+	</div>
+</section>
+
+<section id="adminmenu" class="menu">
+	<div class="menu-container">
+		<div class="menu-container-inside">
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="user()">User 
+			  	<i class="fas fa-chevron-down"></i>
+			  </button>
+				<div class="sublevel-1" id="user">
+				    <a href="form-template.html">Add User</a>
+				    <a href="form-template.html">View User</a>
+				</div>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="permission()">Permission
+			  	<i class="fas fa-chevron-down"></i>
+			  </button>
+				<div class="sublevel-1" id="permission">
+				    <a href="view-template.html">Add Permission</a>
+				    <a href="view-template.html">View Permission</a>
+				</div> 
+			</div>
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="offers()">Change Password
+			  </button>
+			</div> 
+			<div class="menu-item">
+			  <button class="menu-item-button" onclick="my2doQ()">Log Out
+			  </button>
+			</div> 
+		</div>
+	</div>
+</section>
+
+<section id="popup_SendMsg" class="pop-up-menu">
+	<div class="row send-msg-form-body">
+    	<div class="col-xl-5 col-lg-8 col-md-12 col-sm-12 send-msg-form-row-box">
+    		<div class="send-msg-form-inside">
+    			<span onclick="closePopup()"class="close" title="Close Modal" style="color: #ccc;">&times;</span>
+    			<div>
+    				<h1>Send Message</h1>
+    			</div>
+    			<div class="send-msg-form-area">
+    				<form action="">
+    					<div class="message-type">
+	    					<input type="radio" id="SMS" name="message-type" value="sms">
+	    					<label for="SMS">SMS</label>
+	    					<input type="radio" id="APP" name="message-type" value="app">
+	    					<label for="APP">APP</label>
+	    					<input type="radio" id="both" name="message-type" value="both">
+	    					<label for="Both">Both</label>
+    					</div>
+    					<div class="recepient-type">
+    						<input type="radio" id="SMS" name="recepient-type" value="number">
+	    					<label for="recNumber">Send Message to Numbers</label><br><br>
+	    					<input type="radio" id="APP" name="recepient-type" value="name">
+	    					<label for="recName">Send Message to Names</label><br><br>
+    					</div>
+					  	<div class="message-content">
+					  		<label for="fname">Client Number</label><br>
+						  	<input type="text" id="floor" name="floor" value=""><br>
+						 	<label for="lname">Message</label><br>
+						  	<textarea name="message" rows="7"></textarea><br>
+						 </div>
+					</form> 
+    			</div>
+			    <div class="menu-bottom">
+					<div class="menu-button">
+						<button class="form-secondary-button" type="button">Clear</button>
+			    		<button class="form-priority-button" type="button">Send</button>
+					</div>
+				</div>
+    		</div>
+    	</div>
+    </div>
+</section>
+
+
+<section id="main-containter" class="main-container">
+    <div class="row top-row">
+    	<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 left-most-outside">
+	    		<div class="left-most" style="display: block;">
+	    			<div>
+	    				<img src="img/Cognition_fire.png" class="section-icon">
+	    				<h2>Fire</h2>
+	    			</div>
+	    			<div class="textarea-alt">
+	    				<!-- <textarea id="w3review" name="w3review" rows="5" cols="43"></textarea> -->
+	    			</div>
+	    			<div class="label-button">
+	    				<h5>Alert</h5>
+	    				<button class="alert-button" type="button">Normal</button>
+	    			</div>
+	    		</div>
+
+	    		<div class="left-most" style="display: block;">
+	    			<div>
+	    				<img src="img/Cognition_IMS.png" class="section-icon">
+	    				<h2>IMS</h2>
+	    			</div>
+	    			<div class="textarea-alt">
+	    				<textarea id="w3review" name="w3review" rows="5" cols="43"></textarea>
+	    			</div>
+	    			<div class="label-button">
+	    				<h5>Alert</h5>
+	    				<button class="alert-button" type="button">Normal</button>
+	    			</div>	
+	    		</div>
+				<!-- Permission Denied Box for the bottom row START-->
+				<!-- Place after the box that you want to replace -->
+	    		<div class="left-most permission-denied" style="display: none;">
+	    			<div>
+	    				<i class="fas fa-user-lock"></i>
+	    			</div>	
+	    		</div>
+	    		<!-- Permission Denied Box for the bottom row START-->
+    	</div>
+    	<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 center-column">
+    		<div class="row center-top">
+    			<div class="section-top-left">
+    				<button class="menu-button" onclick="firemenuFunction()"><i class="fas fa-fire"></i>
+			  		</button>
+    				<button class="menu-button" onclick="listmenufunction()"><i class="fas fa-list"></i>
+			  		</button>
+    			</div>
+    			<div class="section-top-center">
+    				<a href="index.html"><img src="img/Cognition_logo.png"></a>
+    			</div>
+    			<div class="section-top-right">
+    				<button class="menu-button" onclick="myFunction()"><i class="fas fa-cog"></i>
+			  		</button>
+    				<button class="menu-button" onclick="adminmenu()"><i class="fas fa-user"></i>
+			  		</button>
+    			</div>
+    		</div>
+    		<div class="row center-bottom">
+    			<div class="section-left">
+    				<img src="img/Cognition_pie1.png">
+    				<img src="img/Cognition_pie2.png">
+    				<img src="img/Cognition_pie3.png">
+    			</div>
+    			<div class="section-center">
+    				<div class="section-center-inside">
+    					
+    				</div>
+    			</div>
+    			<div class="section-right">
+    				<img src="img/Cognition_bar1.png">
+    				<img src="img/Cognition_bar1.png">
+    				<img src="img/Cognition_bar1.png">
+    			</div>
+    		</div>
+    	</div>
+
+
+
+    	<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 right-most">
+    		<div class="right-inside" style="display: block;">
+   				<div>
+    				<img src="img/Cognition_vision.png" class="section-icon">
+    				<h2>Visual Connect</h2>
+    			</div>
+    			<div class="camera-box-container-row">
+    				<div  class="camera-box-container">
+    					<div class="camera-box col-lg-6"></div>
+    					<div class="camera-box col-lg-6"></div>
+    				</div> 				
+    			</div>
+    			 <div class="camera-box-container-row">
+    				<div  class="camera-box-container">
+    					<div class="camera-box col-lg-6"></div>
+    					<div class="camera-box col-lg-6"></div>
+    				</div> 				
+    			</div>
+    			<div  class="label-button">
+    				<button class="secondary-button" type="button">Previous</button>
+    				<button class="priority-button" type="button">Next</button>
+    			</div>	
+    		</div>
+    		<!-- Permission Denied Box for the bottom row START-->
+    		<div class="right-inside permission-denied" style="display: none;">
+    			<div>
+    				<i class="fas fa-user-lock"></i>
+    			</div>	
+	    	</div>
+	    	<!-- Permission Denied Box for the bottom row END -->
+    	</div>
+    	
+    </div>
+    <div class="row bottom-row">
+    	<div class="col-lg-3 col-md-6 col-sm-12 bottom-row-box" style="display: block;">
+    		<div class="bottom-inside">
+    			<div>
+    				<img src="img/Cognition_message.png" class="section-icon">
+    				<h2>Responses</h2>
+    			</div>
+    			<div class="textarea-alt">
+    				<!-- <textarea id="w3review" name="w3review" rows="6" cols="43"></textarea> -->
+    			</div>
+    			<div class="label-button">
+    				<button class="priority-button" type="button">View Map</button>
+    			</div>	
+    		</div>
+    	</div>
+    	<!-- Permission Denied Box for the bottom row START-->
+    	<!-- Place after the box that you want to replace -->
+    	<div class="col-lg-3 col-md-6 col-sm-12 bottom-row-box" style="display: none;">
+    		<div class="bottom-inside  permission-denied">
+    			<div>
+    				<i class="fas fa-user-lock"></i>
+    			</div>	
+	    	</div>
+	    </div>
+	    <!-- Permission Denied Box for the bottom row END -->
+    	<div class="col-lg-3 col-md-6 col-sm-12 bottom-row-box" style="display: block;">
+    		<div class="bottom-inside">
+    			<div>
+    				<img src="img/Cognition_evac.png" class="section-icon">
+    				<h2>Evacuation</h2>
+    			</div>
+    			<div class="textarea-alt">
+    				<!-- <textarea id="w3review" name="w3review" rows="6" cols="43"></textarea> -->
+    			</div>
+    			<div class="label-button">
+    				<button class="priority-button" type="button">Send Message</button>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="col-lg-3 col-md-6 col-sm-12 bottom-row-box" style="display: block;">
+    		<div class="bottom-inside">
+    			<div>
+    				<img src="img/Cognition_connection.png" class="section-icon">
+    				<h2>Staff Connect</h2>
+    			</div>
+    			<div class="textarea-alt">
+    				<!-- <textarea id="w3review" name="w3review" rows="6" cols="43"></textarea> -->
+    			</div>
+    			<div class="label-button">
+   					<button class="priority-button" onclick="popup_SendMsg()">Send Message</button>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="col-lg-3 col-md-6 col-sm-12 bottom-row-box" style="display: block;">
+    		<div class="bottom-inside">
+    			<div>
+    				<h2>Room Booking</h2>
+    			</div>
+    			<div class="textarea-alt">
+    				<!-- <textarea id="w3review" name="w3review" rows="6" cols="43"></textarea> -->
+    			</div>
+    			<div class="label-button">
+    				<button class="priority-button" type="button">Room Booking</button>
+    			</div>
+    		</div>
+    	</div>
+    	
+    </div>
+</section>
+
+	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	 <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+	 
+	<!-- Main JS -->
+	<script src="js/app.min.js "></script>
+	<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>

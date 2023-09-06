@@ -1,0 +1,1182 @@
+/*
+ * Cognition
+ * 
+ */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll; 
+  background-color: #1A1A1A;
+  /*background: url("img/bg-01.png") no-repeat center center fixed; */
+  /*background-size: cover;*/
+  height: 100vh;
+    
+}
+
+body {
+  
+  /*font-family: 'Tenika', sans-serif;*/
+  font-family: 'Orbitron', sans-serif;
+  /*font-family: 'Armata', sans-serif;*/
+  /*font-family: 'Advent Pro', sans-serif;*/
+  font-weight: 100; 
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+
+  /*font-family: 'Tenika', sans-serif;*/
+  font-family: 'Orbitron', sans-serif;
+  
+  margin-top: 5px; 
+  color: #CCCCCC;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  font-size: 26pt;
+}
+h2 {
+  font-size: 22pt;
+}  
+h3 {
+  font-size: 18pt;
+} 
+h4 {
+  font-size: 16pt;
+} 
+h5 {
+  font-size: 14pt;
+} 
+h6 {
+  font-size: 12pt;
+} 
+a {
+  color: #CCCCCC;
+  transition: all .3s ease-in-out; }
+
+a:focus,
+button:focus {
+  outline: none; }
+
+.btn:hover,
+a:hover {
+  text-decoration: none;
+  color: #FFF; }
+
+img {
+  max-width: 100%; 
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*     Top menu Section                                                       */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.menu{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: auto;
+  z-index: 5;
+  position: relative;
+  box-shadow: 2px 2px 4px #000000;
+  padding-top: 170px;
+  padding-bottom: 20px;
+  align-items: center;
+  display: none;
+}
+
+.menu-container{
+  /*background-color: darkgrey;*/
+  display: flex;
+  justify-content: center;
+}
+
+.menu-container-inside{
+  /*background-color: darkblue;*/
+  width: 80%;
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  overflow: hidden;
+  /*background-color: darkgray;*/
+  height: auto;
+  color: white;
+}
+
+.menu-item-button {
+  display: inline;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  color: #ccc;
+}
+
+.menu-item-button:hover {
+  text-shadow: 1px 1px 5px #fff;
+}
+
+.sublevel-1{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+  padding: 5px 10px;
+  position: absolute;
+  min-width: 160px;
+  z-index: 7;
+}
+
+.sublevel-1 a {
+  display: inline-block;
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  /*background-color: darkblue;*/
+}
+
+
+.sublevel-1 a:hover {
+  text-shadow: 1px 1px 5px #ccc;
+}
+
+.sublevel-item-button {
+  display: inline;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  float: left;
+  color: #ccc;
+  /*background-color: darkcyan;*/
+}
+
+.sublevel-item-button:hover {
+  text-shadow: 1px 1px 5px #fff;
+}
+
+.sublevel-2{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+  padding: 10px 14px;
+  position: absolute;
+  top: 80%;
+  left: 100%;
+  min-width: 160px;
+  z-index: 7;
+}
+
+.sublevel-2 a {
+  display: inline-block;
+  float: none;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.show {
+  display: block;}
+
+.menu-bottom{
+  /*background-color: grey;*/
+  display: flex;
+  justify-content: center;
+}
+
+.menu-priority-button {
+  background: -webkit-linear-gradient(to bottom, #999999, #4D4D4D);
+  background: linear-gradient(to bottom, #999999, #4D4D4D); 
+  border-radius: 5px;
+  border: none;
+  color: #cccccc;
+  font-size: 10pt;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu-secondary-button {
+  background: -webkit-linear-gradient(to bottom, #333333, #4D4D4D);
+  background: linear-gradient(to bottom, #333333, #4D4D4D); 
+  border-radius: 5px;
+  border: none;
+  /*width: 50%;*/
+  color: #cccccc;
+  font-size: 10pt;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*     Main Dashboard                                                         */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.main-container{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 35px;
+  height: 95%;
+  width: 95%;
+  position: absolute;
+  top: 0;
+  left: 0;
+/*  z-index: 1;*/
+
+}
+
+.top-row{
+  margin: 10px;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+}
+
+/*===== Fire & IMS ==============================================*/
+.left-most{
+  background: -webkit-linear-gradient(to left, #0A0A0A, #1A1A1A);
+  background: linear-gradient(to left, #0A0A0A, #1A1A1A); 
+  height: 50%;
+  width: 100%;
+  border-color: #B3B3B3;
+  border: 5px solid;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
+}
+
+.left-most div {
+  display: flex;
+}
+
+.section-icon {
+  width: 40px; 
+  height: 40px; 
+  margin-right: 10px;
+}
+
+.menu-icon {
+  width: 40px; 
+  height: 40px; 
+  margin-right: 10px;
+}
+
+
+/*===== logo, menu, map and other charts ==============================================*/
+.center-column{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+
+}
+/*===== logo, menu ==============================================*/
+.center-top{
+  height: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+/*===== Map and other charts ==============================================*/
+.center-bottom{
+  height: 85%;
+}
+
+/*===== left side of the logo ==============================================*/
+.section-top-left{
+  /*background-color: darkmagenta;*/
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+  margin: 0px;
+  padding: 0px;
+  z-index: 6;
+}
+
+/*===== logo ==============================================*/
+.section-top-center{
+  /*background-color: darkblue;*/
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 55%;
+  margin: 5px;
+  padding: 0px
+  z-index: 6;
+}
+.section-top-center a{
+  /*background-color: blue;*/
+  width: 100%;
+  z-index: 6;
+}
+.section-top-center a img{
+  /*background-color: green;*/
+}
+
+
+/*===== Right side of the logo ==============================================*/
+.section-top-right{
+  /*background-color: darkmagenta;*/
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+  margin: 0px;
+  padding: 0px;
+  z-index: 6;
+}
+
+/*===== menu icons ==============================================*/
+.section-top-left i,
+.section-top-center i,
+.section-top-right i{
+/*  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;*/
+  margin: 5px;
+  padding-left: 10px;
+  font-size: 30pt;
+  color: #cccccc;
+  z-index: 6;
+}
+
+.menu-button {
+  display: inline;
+  background: none;
+  border: none;
+  outline: none;
+  /*padding: 5px 10px;*/
+  color: #ccc;
+}
+
+.menu-button:hover{
+  text-shadow: 1px 1px 5px white;
+}
+
+.menu-button:hover .menu{
+  display: block;
+}
+
+/*===== Pie charts - left of the map ==============================================*/
+
+.section-left{
+  /*background-color: darkblue;*/
+  height: 100%;
+  width: 22%;
+  margin: 5px;
+  padding: 35px;
+}
+
+.section-left img {
+  margin-top: 20px;
+}
+
+
+/*===== Map ==============================================*/
+
+.section-center{
+  /*background-color: darkblue;*/
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+
+}
+
+.section-center-inside{
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(to left, #0A0A0A, #1A1A1A);
+  background: linear-gradient(to left, #0A0A0A, #1A1A1A);
+  border-color: #FFF;
+  border: 5px solid;
+  border-radius: 10px;
+}
+
+
+/*===== Bar charts - right of the map ==============================================*/
+.section-right{
+  /*background-color: darkblue;*/
+  height: 100%;
+  width: 22%;
+  margin: 5px;
+  padding: 35px;
+}
+.section-right img 
+{
+  margin-top: 20px;
+}
+
+/*===== Visual Connect ==============================================*/
+.right-most{
+
+}
+
+.right-inside{
+  background: -webkit-linear-gradient(to left, #0A0A0A, #1A1A1A);
+  background: linear-gradient(to left, #0A0A0A, #1A1A1A);
+  border-color: #FFF;
+  border: 5px solid;
+  border-radius: 10px;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
+}
+
+.right-inside div {
+  display: flex;
+}
+.camera-box-container-row{
+  height: 40%; 
+  width: 95%;
+}
+
+.camera-box-container{
+  height: 100%; 
+  width: 100%;
+}
+.camera-box {
+  background-color: black;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+/*===== Bottom row Responses, Evacuation, Staff Connect, Room booking ==============================================*/
+.bottom-row{
+  margin: 5px;
+  height: 31%;
+}
+
+.bottom-row-box{
+ 
+}
+.bottom-inside{
+  background: -webkit-linear-gradient(to left, #0A0A0A, #1A1A1A);
+  background: linear-gradient(to left, #0A0A0A, #1A1A1A);
+  border-color: #FFF;
+  border: 5px solid;
+  border-radius: 10px;
+  height: 100%;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bottom-inside div {
+  display: flex;
+}
+
+/*====== Permission Denied  ===========================================================*/
+
+.permission-denied{
+  background: -webkit-linear-gradient(to left, #0A0A0A, #1A1A1A);
+  background: linear-gradient(to left, #0A0A0A, #1A1A1A);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.permission-denied div{
+  width: 100%;
+  height: 100%;
+  /*background-color: darkcyan;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(204, 204, 204);
+}
+.permission-denied i{
+  /*background-color: darkblue;*/
+  color: rgba(204, 204, 204, 0.3);
+  font-size: 140pt;
+}
+
+
+
+/*===== Buttons and buttons labels ==============================================*/
+textarea {
+  background-color: black;
+  border-radius: 10px;
+  border-color: #000;
+  border: 0.5px solid;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.textarea-alt{
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+  height: 60%;
+}
+
+.label-button {
+  padding-top: 10px;
+  justify-content: center; 
+  display: flex;
+}
+
+.alert-button {
+  background: -webkit-linear-gradient(to left, #006837, #003D37);
+  background: linear-gradient(to left, #006837, #003D37); 
+  border-radius: 7px;
+  border: none;
+  width: 95%;
+  color: #cccccc;
+  margin-left: 15px;
+  font-size: 14pt;
+}
+
+.priority-button {
+  background: -webkit-linear-gradient(to bottom, #999999, #4D4D4D);
+  background: linear-gradient(to bottom, #999999, #4D4D4D); 
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  color: #cccccc;
+  font-size: 14pt;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.secondary-button {
+  background: -webkit-linear-gradient(to bottom, #333333, #4D4D4D);
+  background: linear-gradient(to bottom, #333333, #4D4D4D); 
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  color: #cccccc;
+  font-size: 14pt;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+/*    Pop-up form ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.pop-up-menu{
+  display: none;
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.pop-up-menu .send-msg-form-body{
+  margin: 10vh auto;
+  width: 80%;
+}
+/*==============================================================================
+=            Form Page   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=================================================================================*/
+
+.menu-bar{
+  margin: 10px;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+/*  background-color: green;*/
+}
+
+.menu-bar .center-column{
+  /*background-color: red;*/
+  height: 100%;
+}
+
+.menu-bar .center-top{
+  /*background-color: orange;*/
+  height: 100%;
+}
+
+.menu-bar .section-top-left{
+  /*background-color: grey;*/
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 17%;
+  margin: 5px;
+  padding: 20px;
+  z-index: 6;
+}
+
+.menu-bar .section-top-center{
+  /*background-color: darkgray;*/
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 55%;
+  margin: 5px;
+  z-index: 6;
+}
+
+.menu-bar .section-top-right{
+  /*background-color: grey;*/
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 17%;
+  margin: 5px;
+  padding: 20px;
+  z-index: 6;
+}
+
+.form-body{
+  margin: 5vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  /*background-color: green;*/
+}
+
+.form-row-box{
+ 
+}
+
+.form-inside{
+  background: -webkit-linear-gradient(to bottom right, #0A0A0A, #1A1A1A);
+  background: linear-gradient(to bottom right, #0A0A0A, #1A1A1A);
+  border-color: #FFF;
+  border: 5px solid;
+  border-radius: 20px;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 3px 3px 15px black;
+}
+
+.form-inside div {
+  display: flex;
+  justify-content: center;
+
+}
+
+.form-inside h1{
+  margin-top: 10px;
+  font-size: 35pt;
+}
+.form-area{
+  color: white;
+  padding: 10px 30px;
+  width: 100%;
+  height: 80%;
+  /*background-color: darkblue;*/
+  font-family: 'Armata', sans-serif;
+}
+
+.form-area form{
+  display: block;
+  justify-content: left;
+  /*background-color: darkcyan;*/
+  width: 100%;
+}
+
+.form-area input{
+  background-color: black;
+  color: grey;
+  border-color: #000;
+  border: 0.5px solid;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 1vh;
+  width: 100%;
+  font-size: 14pt;
+}
+
+.form-area input:focus{
+  box-shadow: 1px 1px 3px grey;
+  border-color: #000;
+  border: 2px solid;
+}
+
+
+.form-area label {
+  margin-top: 1vh;
+  font-size: 18pt;
+ /* background-color: red;*/
+}
+
+.form-inside .menu-button{
+  margin-top: 20px;
+}
+
+.form-priority-button {
+  background: -webkit-linear-gradient(to bottom, #999999, #4D4D4D);
+  background: linear-gradient(to bottom, #999999, #4D4D4D); 
+  border-radius: 5px;
+  border: none;
+  color: #cccccc;
+  font-size: 12pt;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.form-secondary-button {
+  background: -webkit-linear-gradient(to bottom, #333333, #4D4D4D);
+  background: linear-gradient(to bottom, #333333, #4D4D4D); 
+  border-radius: 5px;
+  border: none;
+  /*width: 50%;*/
+  color: #cccccc;
+  font-size: 12pt;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+/*==============================================================================
+=            Send Message Form  ++++++++++++++++++++++++++++++++++++++++++++++++
+==============================================================================*/
+.send-msg-form-body{
+  margin: 5vh;
+  height: auto;
+  display: flex;
+  justify-content: center
+}
+
+.send-msg-form-row-box{
+ 
+}
+.send-msg-form-inside{
+  background: -webkit-linear-gradient(to bottom right, #0A0A0A, #1A1A1A);
+  background: linear-gradient(to bottom right, #0A0A0A, #1A1A1A);
+  border-color: #FFF;
+  border: 5px solid;
+  border-radius: 20px;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 3px 3px 15px black;
+  text-align: center;
+}
+
+.send-msg-form-inside div {
+  display: block;
+  justify-content: center;
+
+}
+
+.send-msg-form-inside h1{
+  margin-top: 8px;
+  font-size: 22pt;
+}
+
+.send-msg-form-area{
+  color: #ccc;
+  padding: 10px 30px;
+  width: 100%;
+  /*background-color: darkblue;*/
+  font-family: 'Armata', sans-serif;
+}
+
+.send-msg-form-area form{
+  display: block;
+  justify-content: left;
+  /*background-color: darkcyan;*/
+  width: 100%;
+}
+
+.message-type{
+  text-align: left;
+  /*background-color: darkgray;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.recepient-type{
+  display: block;
+  /*background-color: darkblue;*/
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.message-content{
+  /*background-color: darkcyan;*/
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.message-type input{
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.message-type input:checked{
+  background-color: #000;
+  border: 2px solid;
+}
+
+
+.message-type label{
+  font-size: 12pt;
+  margin-right: 50px;
+}
+
+.recepient-type input{
+  background-color: #ccc;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.recepient-type label{
+  font-size: 12pt;
+  margin-right: 50px;
+  /*background-color: green;*/
+  margin-bottom: 0px;
+}
+
+.message-content input{
+  background-color: black;
+  color: grey;
+  border-color: #000;
+  border: 0.5px solid;
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 100%;
+  font-size: 14pt;
+}
+
+.message-content input:focus{
+  box-shadow: 1px 1px 3px grey;
+  border-color: #000;
+  border: 2px solid;
+}
+
+.message-content textarea{
+  background-color: black;
+  color: grey;
+  border-color: #000;
+  border: 0.5px solid;
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 14pt;
+}
+
+.message-content textarea:focus{
+  box-shadow: 1px 1px 3px grey;
+  border-color: #000;
+  border: 2px solid;
+}
+
+.message-content label {
+  font-size: 16pt;
+}
+
+.show {
+  display: block;}
+
+
+
+/*==============================================================================
+=            View Page   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=================================================================================*/
+
+.table-body{
+  margin: 4vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.table-row-box{
+ 
+}
+.table-inside{
+  background: -webkit-linear-gradient(to bottom right, #0A0A0A, #1A1A1A);
+  background: linear-gradient(to bottom right, #0A0A0A, #1A1A1A);
+  border-color: #FFF;
+  border: 5px solid;
+  border-radius: 20px;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  box-shadow: 3px 3px 15px black;
+}
+
+.table-inside h1 {
+  display: flex;
+  justify-content: center;
+  /*background-color: darkblue;*/
+  margin-top: 10px;
+}
+
+.table-area{
+  color: white;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  /*background-color: darkblue;*/
+}
+
+.table-inside .entry-count{
+  /*background-color: grey;*/
+  display: flex;
+  justify-items: left;
+  align-items: center;
+}
+
+.table-inside .search{
+  /*background-color: darkgrey;*/
+  display: flex;
+  justify-items: right;
+  align-items: center;
+}
+
+.entry-count div,
+.search div{
+  width: 65px;
+  border-color: #000;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 45%;
+  margin: 5px 10px;
+  padding-left: 10px;
+  background-color: black;
+  color: #ccc;
+  align-items: center;
+}
+
+.search div{
+  width: 150px;
+}
+
+.entry-count h3,
+.search h3{
+  padding-top: 5px;
+}
+
+.entry-count i{
+  margin: 3px 6px;
+  float: right;
+}
+
+.table-area table{
+  width: 100%;
+  border-color: #ccc;
+  border: 1px solid;
+}
+
+.table-area table tr {
+  border-color: #ccc;
+  border: 1px solid;
+
+}
+
+.table-area table th {
+  color: #ccc;
+  font-size: 15pt;
+  padding: 10px;
+  border-color: #ccc;
+  border: 1px solid;
+
+}
+
+.table-area table th i{
+  font-size: 12pt;
+  float: right;
+  text-align: right;
+  margin-top: 5px;
+  margin-left: 3px;
+  align-items: center;
+}
+
+.entry-count i:hover,
+.table-area table th i:hover{
+  text-shadow: 1px 1px 3px white;
+}
+
+
+.table-area table td {
+  color: #aaa;
+  font-size: 12pt;
+  padding-top: 1.4vh;
+  padding-bottom: 1.4vh;
+  padding-left: 10px;
+  border-color: #ccc;
+  border: 1px solid;
+}
+
+.table-bottom{
+  /*background-color: grey;*/
+  display: block;
+  align-items: center;
+}
+
+.table-content-summary{
+  display: flex;
+  align-items: center;
+}
+
+.table-bottom .menu-button{
+  display: flex;
+  justify-content: right;
+}
+
+.table-bottom p{
+  color: #ccc;
+}
+
+/*==============================================================================
+=            Log In Page  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==============================================================================*/
+.login-containter{
+  width: 100%;
+  height: auto;
+ /* background-color: whitesmoke;*/
+  padding-top: 8vh;
+
+}
+.logo-section{
+/*  background-color: black;*/
+  display: flex;
+  justify-content: center;
+}
+
+.logo-containter{
+  /*background-color: darkgrey;*/
+  display: flex;
+  justify-content: center;
+}
+
+.logo-section img{
+  width: 50%;
+}
+
+
+.login-form-body{
+  /*background-color: darkblue;*/
+  margin: 10px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form-row-box{
+  /*background-color: darkgray;*/
+}
+
+.login-form-inside{
+  background: -webkit-linear-gradient(to bottom right, #0A0A0A, #1A1A1A);
+  background: linear-gradient(to bottom right, #0A0A0A, #1A1A1A);
+  border-color: #FFF;
+  border: 5px solid;
+  border-radius: 20px;
+  height: 100%;
+  padding: 15px 20px;
+  box-shadow: 3px 3px 15px black;
+
+}
+
+.login-form-area{
+  color: white;
+  padding: 10px 30px;
+  width: 100%;
+  /*background-color: darkblue;*/
+}
+
+.login-form-inside div {
+  display: flex;
+  justify-content: center;
+  /*background-color: darkgreen;*/
+
+}
+
+.login-form-inside h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25pt;
+  /*background-color: green;*/
+}
+
+.login-form-area form{
+  display: block;
+  justify-content: left;
+  /*background-color: darkcyan;*/
+  width: 100%;
+}
+
+.login-form-area input{
+  background-color: black;
+  color: grey;
+  border-color: #000;
+  border: 0.5px solid;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  font-size: 12pt;
+}
+
+.login-form-area input:focus{
+  box-shadow: 1px 1px 3px grey;
+  border-color: #000;
+  border: 2px solid;
+}
+
+
+.login-form-area label {
+  margin-top: 15px;
+  font-size: 12pt;
+}
+

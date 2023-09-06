@@ -1,0 +1,683 @@
+/*----1600px-------------------------------------------*/
+@media (max-width: 1600px) {
+	h1 {
+  font-size: 40pt;
+}  
+h2 {
+  font-size: 30pt;
+}  
+h3 {
+  font-size: 20pt;
+} 
+h4 {
+  font-size: 16pt;
+} 
+h5 {
+  font-size: 14pt;
+} 
+h6 {
+  font-size: 12pt;
+} 
+p {
+  font-size: 16pt;
+}
+
+.left-navigation{
+	width: 18%;
+	padding: 30px;
+}
+.nav-container h3{
+  font-size: 14pt;
+}
+.main-container{
+	width: 85%;
+	padding: 45px 45px 45px 65px;
+}
+.about-me{
+  height: fit-content;
+}
+.description p{
+  font-size: 18pt;
+}
+
+.contact ul{
+	font-size: 16pt !important;
+}
+.work-exp-container{
+	padding: 30px 50px;
+}
+.work-exp-container .row{
+	/*background-color: darkblue;*/
+  margin: 20px 0px;
+  padding: 20px 00px;
+}
+.individual-work{
+	 padding: 70px 40px;
+}
+.individual-work-overlay h6{
+	font-size: 14pt;
+}
+.individual-work-overlay ul{
+	font-size: 11pt;
+}
+.ind-projects{
+	/*background-color: blue;*/
+	 padding: 30px 50px;
+}
+.ind-projects .project-img img{
+  object-fit: contain;
+}
+.project-des{
+	padding: 40px 30px;
+	height: auto;
+}
+.project-des h4{
+	font-size: 22pt;
+	margin-bottom: 25px;
+}
+.project-des h6{
+	font-size: 14pt;
+}
+.project-des a{
+	font-size: 12pt;
+}
+	.left{
+		left: 60px;
+	}
+	.right{
+		right: 60px;
+	}
+	.left ul,
+	.right ul{
+		padding-top: 25px;
+	  padding-bottom: 15px;
+	}
+	.edu-container,
+	.exp-container{
+	  padding: 50px;
+	}
+	.exp-container .row{
+		margin: 0;
+	}
+	.exp-column{
+	  width: 33%;
+	}
+}
+
+/*----1400px-------------------------------------------*/
+@media (max-width: 1400px) {
+	.ind-projects{
+/*		background-color: blue;*/
+		 padding: 30px 5px;
+	}
+	.ind-projects li{
+		font-size: 10pt;
+	}
+	.project-des{
+		padding: 30px 10px;
+	}
+	.left{
+		left: 50px;
+	}
+	.right{
+		right: 50px;
+	}
+}
+
+
+/*----1200px-------------------------------------------*/
+@media (max-width: 1200px) {
+	.left-navigation{
+		padding: 30px;
+	}
+	.left-navigation h3{
+		font-size: 14pt;
+	}
+	.about-me{
+		/*background-color: black;*/
+	}
+	.about-me-container{
+		/*background-color: gray;*/
+		padding: 30px;
+	}
+	.contact li{
+		font-size: 10pt;
+	}
+	.contact i{
+		font-size: 12pt;
+	}
+	.description p{
+  	font-size: 12pt;
+	}
+	.work-exp-container{
+		padding: 25px 40px;
+	}
+	.work-exp-container .row{
+		/*background-color: darkblue;*/
+	  margin: 30px 0px;
+	  padding: 30px 00px;
+	}
+	.individual-work{
+		 padding: 90px 30px;
+
+	}
+	.work-exp h5{
+		font-size: 16pt;
+	}
+	.work-exp h6{
+		font-size: 14pt;
+	}
+	.individual-work-overlay h6{
+		font-size: 12pt;
+	}
+	.individual-work-overlay ul{
+		font-size: 9pt;
+	}
+	.project-des{
+		padding: 20px 10px;
+	}
+	.ind-projects .project-img{
+	  width: 42%;
+	}
+	.gap{
+	  width: 2%;
+	}
+	.project-des{
+	  width: 55%;
+
+	}
+	.left{
+		left: 30px;
+	}
+	.right{
+		right: 30px;
+	}
+	.left, .right{
+		/*background-color: black;*/
+
+	}
+	.project-des h4{
+		font-size: 16pt;
+		margin-bottom: 12px;
+	}
+	.project-des h6{
+		font-size: 12pt;
+	}
+	.project-des a{
+		font-size: 10pt;
+		padding-top: 5px;
+		/*background-color: darkgrey;*/
+	}
+	.left ul,
+	.right ul{
+		padding: 8px 5px;
+		/*background-color: darkcyan;*/
+		margin: 0;
+	}
+	.left li,
+	.right li{
+		font-size: 8pt;
+		padding: 5px 8px;
+	}
+	.edu-exp{
+		/*background-color: black;*/
+	}
+	.edu-exp h5{
+		font-size: 20pt;
+	}
+	.edu-exp h6{
+		font-size: 16pt;
+	}
+	.exp-container{
+		padding-top: 30px;
+	}
+	.exp-container .row{
+		padding-left: 20px;
+	}
+	.exp-container li{
+		font-size: 14pt;
+	}
+	.exp-container h5{
+		font-size: 18pt;
+	}
+	.brand-design,
+	.package-design,
+	.print-design{
+			padding: 15px 50px;
+		}
+	.portfolio-item{
+		 padding: 5px;
+	}
+	.footer li{
+		font-size: 12pt;
+	}
+
+}
+
+/*----992px-------------------------------------------*/
+@media (max-width: 992px) {
+	.contact{
+	  /*background-color: black;*/
+	}
+		.individual-work{
+		 padding: 70px 30px;
+	}
+	.left{
+		left: 20px;
+	}
+	.right{
+		right: 20px;
+	}
+	.left, .right{
+		/*background-color: black;*/
+
+	}
+	.project-des h4{
+		font-size: 14pt;
+		margin-bottom: 10px;
+	}
+	.project-des h6{
+		font-size: 12pt;
+	}
+	.project-des a{
+		font-size: 10pt;
+		padding-top: 5px;
+		/*background-color: darkgrey;*/
+	}
+	.left ul,
+	.right ul{
+		padding: 5px 5px;
+		/*background-color: darkcyan;*/
+		margin: 0;
+	}
+	.left li,
+	.right li{
+		font-size: 7pt;
+		padding: 5px 8px;
+	}
+}
+
+/*----768px-------------------------------------------*/
+@media (max-width: 768px) {
+	.left-navigation{
+		width: 10%;
+		padding: 0 10px;
+		margin: 0;
+		/*background-color: grey;*/
+	}
+	.nav-container{
+		/*background-color: green;*/
+		margin: 0;
+		padding: 0;
+	}
+	.nav-container a{
+		/*background-color: darkred;*/
+		height: 20%;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	.nav-container h3{
+		font-size: 11pt;
+		transform: rotate(-180deg);
+		/*background-color: blue;*/
+		text-orientation: mixed;
+		writing-mode: vertical-lr;
+	}
+
+	.main-container{
+  	width: 90%;
+  	padding: 10px;
+  	/*background-color: grey;*/
+  	margin-left: 10%;
+	}
+	.introduction-container{
+  	width: 100%;
+	}
+	.about-me{
+		/*background-color: black;*/
+		margin: 0;
+		height: fit-content;
+	}
+	.description{
+  	margin-top: 10px;
+  	/*background-color: black;*/
+
+  }
+  .contact{
+  	/*background-color: darkblue;*/
+  	padding-top: 30px;
+	}
+	.contact ul{
+		display: flex;
+		flex-wrap: wrap;
+		/*background-color: grey;*/
+		margin: 0;
+		padding: 0;
+	}
+	.contact ul li{
+		width: 33%;
+	}
+	.contact a{
+		margin-left: 0;
+	}
+	.work-exp{
+		height: fit-content;
+		margin-top: 30px;
+  	margin-bottom: 30px;
+	}
+	.work-exp-container .row{
+		padding: 0;
+	}
+	.projects{
+	  margin-top: 0;
+	  margin-bottom: 30px;
+	}
+	.project-des h4{
+		font-size: 15pt;
+	}
+	.project-des h6{
+		font-size: 11pt;
+		margin-bottom: 5px;
+	}
+	.project-des a{
+		font-size: 10pt;
+		padding-top: 5px;
+		/*background-color: darkgrey;*/
+	}
+	.left li,
+	.right li{
+		font-size: 9pt;
+		padding: 3px 5px;
+	}
+	.edu-exp{
+		margin-top: 30px;
+  	margin-bottom: 30px;
+	}
+	.exp-container ul{
+		/*background-color: black;*/
+		padding: 0 15px;
+	}
+	.portfolio h3{
+		font-size: 14pt;
+	}
+	.footer{
+		margin-top: 30px;
+  	margin-bottom: 30px;
+	}
+	.footer-1,
+	.footer-2{
+	  /*background-color: grey;*/
+	  padding: 20px;
+	}
+
+}
+/*----668px-------------------------------------------*/
+@media (max-width: 668px){
+	.left-navigation{
+		padding: 0 5px;
+		margin: 0;
+		/*background-color: grey;*/
+	}
+	.nav-container h3{
+		font-size: 10pt;
+	}
+	.work-exp-container .row{
+		padding: 0;
+		margin: 0;
+		justify-content: center;
+	}
+	.individual-work{
+		padding: 80px 50px;
+		width: 80%;
+	}
+	.ind-projects .project-img{
+	  width: 100%;
+	}
+	.gap{
+	  display: none;
+	}
+	.project-des{
+	  width: 100%;
+	}
+	.reverse{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.right, .left{
+		position: relative;
+	  text-align: left;
+	  left: 20px;
+	}
+	.right ul, .left ul{
+		display: flex;
+		justify-content: left;
+		margin: 10px -5px;
+	}	
+	.project-des h4{
+		font-size: 18pt;
+	}
+	.project-des h6{
+		font-size: 16pt;
+	}
+	.project-des a{
+		font-size: 14pt;
+		padding-top: 5px;
+		/*background-color: darkgrey;*/
+	}
+	.left li,
+	.right li{
+		font-size: 12pt;
+		padding: 5px 8px;
+	}
+}
+
+/*----512px-------------------------------------------*/
+@media (max-width: 512px){
+	h1 {
+	  font-size: 30pt;
+	}  
+	h2 {
+	  font-size: 28pt;
+	}  
+	h3 {
+	  font-size: 18pt;
+	} 
+	h4 {
+	  font-size: 14pt;
+	} 
+	h5 {
+	  font-size: 12pt;
+	} 
+	h6 {
+	  font-size: 12pt;
+	} 
+	p {
+	  font-size: 12pt;
+	}
+	.left-navigation{
+		width: 10%;
+		padding: 0;		
+	}
+	.nav-container a{
+		padding: 0;
+		margin: 5px 0;
+	}
+
+	.nav-container h3{
+		font-size: 9pt;
+	}
+	.main-container{
+  	width: 90%;
+  	padding: 10px;
+  	margin-left: 10%;
+	}
+	.introduction-container{
+	  justify-content: center;
+	  text-align: center;
+	}
+	.about-me,
+	.work-exp,
+	.projects,
+	.edu-exp,
+	.portfolio{
+		padding: 0;
+	}
+
+	.work-exp-container,
+	.projects-container,
+	.edu-container,
+	.exp-container,
+	.brand-design,
+	.package-design,
+	.print-design{
+		padding: 10px 20px;
+	}
+	.portfolio-title{
+	  padding-left: 20px;
+	}
+	.contact ul li {
+    width: 50%;
+    font-size: 9pt;
+	}
+	.contact ul li i{
+	  margin-right: 5px;
+	  font-size: 9pt;
+	}
+	.individual-work{
+		margin: 10px 0px;
+		padding: 80px 30px;
+		width: 100%;
+	}
+	.project-des h4{
+		font-size: 16pt;
+	}
+	.project-des h6{
+		font-size: 14pt;
+	}
+	.project-des a{
+		font-size: 12pt;
+	}
+	.right, .left{
+	  left: 10px;
+	}
+	.left li,
+	.right li{
+		font-size: 7pt;
+	}
+	.exp-column{
+	  width: 100%;
+	}
+	.exp-container ul{
+		column-count: 2;
+	}
+	.exp-container li{
+	  font-size: 12pt;
+	  
+	}
+	.footer{
+		margin-top: 10px;
+  	margin-bottom: 10px;
+	}
+	.footer-1,
+	.footer-2{
+	  /*background-color: darkgrey;*/
+	  padding: 10px;
+	  margin: 0 0 0 10px;
+	}
+	.footer-1 ul{
+		/*background-color: grey;*/
+		flex-wrap: wrap;
+		display: flex;
+		padding: 0;
+		width: 100%;
+	}
+	.footer-1 li{
+		margin-right: 0;
+		flex-wrap: wrap;
+		width: 50%;
+		/*background-color: black;*/
+		font-size: 9pt;
+		margin-bottom: 10px;
+	}
+	.footer-2 h6{
+		font-size: 10pt;
+	}
+	.footer-2 ul{
+	  display: flex;
+	  justify-content: center;
+	  list-style: none;
+	  /*text-align: center;*/
+	  /*background-color: black;*/
+	  margin: 0;
+	}
+
+	.footer-2 li{
+	  font-size: 12pt;
+	  margin-right: 10px;
+	  text-align: center;
+	}
+
+	.portfolio-item {
+	  width: 100%;
+	  padding: 5px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
